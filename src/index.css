@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0F121B;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.logo {
+  color: rgba(255, 255, 255, 0.95);
+  font-family: Signika Negative, cursive;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.focus {
+  background-image: radial-gradient(circle,
+      rgba(46, 67, 116, .3),
+      rgba(46, 67, 116, .1),
+      rgba(46, 67, 116, .0),
+      rgba(46, 67, 116, 0));
+}
+
+.card-bg-focus {
+  background-image: radial-gradient(circle,
+      rgba(156, 166, 255, 0.70),
+      rgba(156, 166, 255, 0.35),
+      rgba(156, 166, 255, 0),
+      rgba(156, 166, 255, 0));
+}
+
+.gradient-txt {
+  background: linear-gradient(94deg, #98A2FF -0.79%, #7CFFA9 45.84%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.remove-arrow::-webkit-inner-spin-button,
+.remove-arrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.remove-arrow {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+
+/* 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
